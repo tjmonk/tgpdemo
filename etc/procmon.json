@@ -1,0 +1,18 @@
+{
+    "processes":[
+        {
+            "id":"varserver",
+            "exec":"varserver",
+            "wait":"1",
+            "monitored" : true
+        },
+        {
+            "id":"corevars",
+            "exec":"varcreate /etc/vars.json",
+            "restart_delay" : 1,
+            "depends":["varserver"],
+            "restart_on_parent_death" : true,
+            "wait":"1"
+        }
+    ]
+}
