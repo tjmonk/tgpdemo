@@ -43,13 +43,5 @@ RUN addgroup -S varserver
 
 ENTRYPOINT ["start.sh"]
 
-#RUN mkdir build && cd build && cmake .. && make && make install
-
-#RUN git clone https://github.com/eclipse/paho.mqtt.c.git && cd paho.mqtt.c && make && make install
-# RUN git cl976c3838787aone https://github.com/FastCGI-Archives/fcgi2 && cd fcgi2/ && ./autogen.sh && ./configure && make && make install
-
-
-#RUN cd ~/tgp && mkdir -p build && cd build && cmake .. && make && make install
-
 
 
