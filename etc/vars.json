@@ -70,6 +70,68 @@
 			"description":"Delay value",
 			"read":"1000,1001",
 			"write":"1000"
-		}
+		},
+		{
+            "name":"/SYS/NETWORK/IP",
+            "type":"str",
+            "length":"128",
+            "fmt":"%-10s",
+            "tags":"sys,test,foo,sys:test",
+            "value":"<ip address>",
+            "shortname":"IP",
+            "description":"IP address",
+            "flags":"volatile",
+            "read":"1000,1001",
+            "write":"1000"
+        },
+        {
+            "name":"/SYS/NETWORK/MAC",
+            "type":"str",
+            "length":"128",
+            "fmt":"%-10s",
+            "tags":"sys,test,foo,sys:test",
+            "value":"<mac address>",
+            "shortname":"MAC Address",
+            "description":"Network MAC address",
+            "flags":"volatile",
+            "read":"1000,1001",
+            "write":"1000"
+        },
+        {
+            "name":"/SYS/INFO/UPTIME",
+            "type":"str",
+            "length":"128",
+            "fmt":"%s",
+            "value":"<system uptime>",
+            "shortname":"Uptime",
+            "description":"System up-time",
+            "flags":"volatile",
+            "read":"1000,1001",
+            "write":"1000"
+        },
+        {
+            "name":"/SYS/INFO/PS",
+            "type":"str",
+            "length":"128",
+            "fmt":"%s",
+            "value":"<process info>",
+            "shortname":"procinfo",
+            "description":"System process information",
+            "flags":"volatile",
+            "read":"1000,1001",
+            "write":"1000"
+        },
+        {
+            "name":"/SYS/FILEVAR/INFO",
+            "type":"str",
+            "length":"128",
+            "fmt":"%s",
+            "value":"<filevar info>",
+            "shortname":"fv_info",
+            "description":"Filevar test",
+            "flags":"volatile",
+            "read":"1000,1001",
+            "write":"1000"
+        }
 	]
 }

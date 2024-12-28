@@ -36,7 +36,7 @@ RUN cmake .. && make && make install
 FROM busybox
 COPY --from=build /tgp/bin/ /usr/local/bin/
 COPY --from=build /tgp/lib/ /lib/
-COPY etc/ /etc/
+COPY etc/ /etc/tgp/
 COPY bin/ /usr/local/bin
 
 RUN addgroup -S varserver

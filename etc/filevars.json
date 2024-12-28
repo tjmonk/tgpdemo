@@ -1,0 +1,6 @@
+{
+    "config" : [
+        { "var" : "/sys/filevar/info",
+          "file" : "/etc/tgp/filevars.tmpl" }
+    ]
+}

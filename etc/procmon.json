@@ -8,11 +8,25 @@
         },
         {
             "id":"corevars",
-            "exec":"varcreate /etc/vars.json",
+            "exec":"varcreate /etc/tgp/vars.json",
             "restart_delay" : 1,
             "depends":["varserver"],
             "restart_on_parent_death" : true,
             "wait":"1"
+        },
+        {
+            "id":"execvars",
+            "exec":"execvars -f /etc/tgp/execvars.json",
+            "depends":["corevars","varserver"],
+            "restart_on_parent_death" : true,
+            "monitored" : true
+        },
+        {
+            "id":"filevars",
+            "exec":"filevars -f /etc/tgp/filevars.json",
+            "depends":["corevars","varserver"],
+            "restart_on_parent_death" : true,
+            "monitored" : true
         }
     ]
 }

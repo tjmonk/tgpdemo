@@ -1,0 +1,12 @@
+{
+    "commands" : [
+        { "var" : "/sys/network/mac",
+          "exec" : "ifconfig eth0 | grep 'HWaddr' | awk '{print $5}'" },
+        { "var" : "/sys/info/uptime",
+          "exec" : "uptime | tr '\\n' '\\0'" },
+        { "var" : "/sys/network/ip",
+          "exec" : "ifconfig eth0 | grep inet | awk '{ print $2}' | sed 's/addr://g'"},
+        { "var" : "/sys/info/ps",
+          "exec" : "procmon -o json"}
+    ]
+}
