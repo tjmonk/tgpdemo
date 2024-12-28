@@ -1,7 +1,7 @@
 # tgpdemo
 The Gateway Project demo container
 
-## To start the docker container
+## To build the docker container
 ```
 sudo docker build -t tgpdemo .
 ```
