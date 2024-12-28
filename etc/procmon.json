@@ -27,6 +27,21 @@
             "depends":["corevars","varserver"],
             "restart_on_parent_death" : true,
             "monitored" : true
+        },
+        {
+            "id":"manifest",
+            "exec":"manifest -f /etc/tgp/manifest.json",
+            "depends":["varserver"],
+            "restart_on_parent_death" : true,
+            "monitored" : true
+        },
+        {
+            "id":"lighttpd",
+            "exec":"lighttpd -D -f /etc/tgp/lighttpd.conf",
+            "depends":["varserver"],
+            "wait":1,
+            "restart_on_parent_death" : true,
+            "monitored" : true
         }
     ]
 }

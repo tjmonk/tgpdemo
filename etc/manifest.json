@@ -1,0 +1,21 @@
+[
+    {
+        "manifest" : "manifest1",
+        "rendervar" : "/sys/manifest/info",
+        "countvar" : "/sys/manifest/changecount",
+        "diffvar" : "/sys/manifest/diff",
+        "statsvar" : "/sys/manifest/stats",
+        "diffcountvar" : "/sys/manifest/diffcount",
+        "changelog" : "/sys/manifest/changelog",
+        "changelogsize" : 10,
+        "changelogfile" : "/tmp/manifest_changelog.txt",
+        "baselinefile" : "/tmp/manifest_baseline.txt",
+        "manifestfile" : "/tmp/manifest.txt",
+        "dynamicfile" : true,
+        "sources" : [
+            "/etc/tgp",
+            "/usr/local/bin",
+            "/lib"
+        ]
+    }
+]
