@@ -132,6 +132,18 @@
             "flags":"volatile",
             "read":"1000,1001",
             "write":"1000"
+        },
+        {
+            "name":"/SYS/INFO/MOTD",
+            "type":"str",
+            "length":"128",
+            "fmt":"%s",
+            "value":"<message of the day>",
+            "shortname":"motd",
+            "description":"Greeting Message of the Day",
+            "flags":"volatile",
+            "read":"1000,1001",
+            "write":"1000"
         }
 	]
 }

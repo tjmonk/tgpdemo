@@ -1,6 +1,8 @@
 {
     "config" : [
         { "var" : "/sys/filevar/info",
-          "file" : "/etc/tgp/filevars.tmpl" }
+          "file" : "/etc/tgp/filevars.tmpl" },
+        { "var" : "/sys/info/motd",
+          "file" : "/etc/tgp/motd.tmpl" }
     ]
 }
